@@ -1,0 +1,21 @@
+==== 2014: Software Development Engineer
+July 2014 - September 2016, Amadeus Data Processing GmbH, Erding [DE]
+
+.Technical analysis of a monitoring system
+	Review of the storage: Response times divided by 10.
+	
+.Technical analysis of a new tool customer focused
+	Working with analysts for functional review of the product.
+	Responsible of the technical analysis, architecture and implementation of the prototype.
+	Setup of microservices architecture.
+
+.Architecture, Development and Support on a monitoring tool
+	Development and study for modernization of a 15-year old monitoring internal tool.
+	Started migration to a microservices architecture of the different functionalities.
+
+.Modernization of a diagnostic tool
+	Gather requirements from users on the current tool.
+	Study current tool architecture flexibility for improvements. 
+	Migration of the User Interface from Java Server Faces architecture to a Javascript/REST services and improvements made to functionalities.
+	Migration and separation of different processes and applications into small projects.
+	Review of data model: Migration from SQL to NoSQL storage.

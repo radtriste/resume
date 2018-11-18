@@ -1,0 +1,14 @@
+:job_title: Java Developer/architect
+
+:work_title: Work Experience
+:competences_title: Competences
+:education_title: Education
+:languages_title: Languages
+:activities_title: Activities
+
+:competences_databases_title_name: Databases
+:competences_others_title_name: Others
+
+:footer_phone: Phone
+:footer_address: Address
+:footer_mail: Mail

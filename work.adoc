@@ -1,0 +1,11 @@
+=== {work_title}
+
+include::lang/{lang}/work/2016_architect.adoc[Missing lang 2016_architect !!!!]
+
+include::lang/{lang}/work/2014_software_engineer.adoc[Missing lang 2014_soft_engineer !!!!]
+
+include::lang/{lang}/work/2013_software_developer.adoc[Missing lang 2014_soft_dev !!!!]
+
+include::lang/{lang}/work/2009_java_consultant.adoc[Missing lang 2009_java_consultant !!!!]
+
+include::lang/{lang}/work/2009_project_graduation.adoc[Missing lang 2009_project_graduation !!!!]

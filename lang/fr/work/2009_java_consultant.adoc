@@ -1,0 +1,7 @@
+==== 2009: Java Consultant
+November 2009 - January 2013, Astek SE, Sophia-Antipolis [FR]
+
+.Etude et Implémentation en Java d’un exćuteur de scripts Groovy sur une base de données en temps-réel (écrite en C).
+	
+	Etude de l’application existante et des besoins décrits dans les spécifications. 
+	Implémentation d’un exécuteur de scripts Groovy accédant à la base de données.

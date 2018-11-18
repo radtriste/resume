@@ -1,0 +1,34 @@
+=== Competences
+
+[cols="2",frame="none",grid="cols"]
+|===
+a| 
+* *Java/Frameworks*
+  - Java 8
+  - Spring (Boot/Cloud/JPA/Security)
+  - Java EE 6&7
+  - Build: Maven, Gradle
+  - Servers: Wildfly server (8+/Swarm)
+* *Cloud*
+  - Docker/Docker Swarm
+  - Kubernetes
+  - Cloud Foundry
+  - Istio
+  - Helm
+  - Open Service Broker
+  - Openshift
+ a|
+* *CI/CD*
+  - Jenkins Pipeline
+  - Gitlab Pipeline
+* *Web*
+  - Angular 4+
+  - JQuery
+* *{competences_databases_title_name}*
+  - SQL: H2/MySQL
+  - NoSQL: MongoDB, Neo4j
+  - Elasticsearch
+* *{competences_others_title_name}*
+  - Eclipse, Spring Tool Suite, Intellij
+  - Office
+|===

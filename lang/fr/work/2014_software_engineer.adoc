@@ -1,0 +1,25 @@
+==== 2014: Software Development Engineer
+Juillet 2014 - Septembre 2016, Amadeus Data Processing GmbH, Erding [DE]
+
+.Analyse technique d´un système de monitoring
+	
+	Analyse du stockage des données (time series) dans InfluxDB: Temps de réponse divisés par 10 après amélioration.
+	
+.Responsable de l’analyse technique d’un nouvel outil pour les clients
+	
+	Travail en collaboration avec les analystes pour une revue fonctionnelle du produit. 
+	Responsable de l’architecture et de l’implémentation d’un prototype (Java, Spring, AngularJS, MongoDB, MySQL). 
+	Mise en place d’une architecture en microservices.
+	
+.Architecture, Développement et Support sur un outil de monitoring
+	
+	Développement et étude de modernisation sur un outil interne ayant 15 ans d’âge. 
+	Migration de certaines fonctionnalités côté UI afin de commencer le processus de modernisation.
+	
+.Modernisation complète d’un outil interne de diagnostic d’incidents
+	
+	Analyse du besoin des utilisateurs sur l’outil en place. 
+	Etude de la flexibilité de l’architecture en place pour de futures améliorations. 
+	Migration de l’interface utilisateur (Java Server Faces vers Javascript/REST services) et amélioration des fonctionnalités suivant le besoin de l’utilisateur. 
+	Migration et séparation de la logique serveur en plusieurs projets. 
+	Analyse du modèle de données: migration d’un stockage SQL vers un stockage NoSQL (MongoDB).

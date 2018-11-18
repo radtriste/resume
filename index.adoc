@@ -1,0 +1,27 @@
+= Tristan Radisson
+:lang: fr
+include::lang/{lang}/attributes.adoc[Missing lang attributes !!!!]
+
+'''
+
+== {job_title}
+
+'''
+
+include::lang/{lang}/objectives.adoc[Missing objectives !!!!]
+
+'''
+
+include::work.adoc[Missing work !!!!]
+
+include::competences.adoc[Missing competences !!!!]
+
+include::education.adoc[Missing education !!!!]
+
+include::languages.adoc[Missing languages !!!!]
+
+include::activities.adoc[Missing activities !!!!]
+
+'''
+
+include::footer.adoc[Missing footer !!!!]

@@ -1,0 +1,3 @@
+=== {activities_title}
+
+include::lang/{lang}/activities.adoc[Missing lang activities !!!!]
