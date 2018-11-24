@@ -12,3 +12,4 @@
 :footer_phone: Phone
 :footer_address: Address
 :footer_mail: Mail
+:footer_website: Website

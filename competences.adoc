@@ -1,4 +1,4 @@
-=== Competences
+== Competences
 
 [cols="2",frame="none",grid="cols"]
 |===

@@ -4,7 +4,7 @@
 :competences_title: Compétences
 :education_title: Formation
 :languages_title: Langues
-:activities_title: Activités
+:activities_title: Loisirs
 
 :competences_databases_title_name: Base de données
 :competences_others_title_name: Autres
@@ -12,3 +12,4 @@
 :footer_phone: Téléphone
 :footer_address: Adresse
 :footer_mail: E-Mail
+:footer_website: Site Web

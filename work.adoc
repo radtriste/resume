@@ -1,4 +1,4 @@
-=== {work_title}
+== {work_title}
 
 include::lang/{lang}/work/2016_architect.adoc[Missing lang 2016_architect !!!!]
 

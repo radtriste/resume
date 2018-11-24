@@ -1,18 +1,24 @@
-==== 2013: Software Developer
-February 2013 - July 2014, Amadeus Data Processing GmbH, Erding [DE]
+=== 2013-2014: Software Developer
+[small]_Amadeus Data Processing GmbH, Erding [DE]_
 
 .Creation of a scheduling & automation dashboard
-	Study of needs from the future users.
-	Functional and Technical analysis and study of the architecture.
-	Development of UI (Javascript) and Back-End (Java/MySQL).
+****
+Study of needs from the future users.
+Functional and Technical analysis and study of the architecture.
+Development of UI (Javascript) and Back-End (Java/MySQL).
+****
 
 .Migration from a proprietary monitoring tool to an internal tool
-	Study of current architecture (Proprietary tool’s functionalities, Existing used internal tools).
-	Study of possible implementations for the migration.
-	Compared solution proposed time / effort needed.
-	Implementation of the best solution.
-	Dealt with multithreading/concurrence to correct performance issues.
+****
+Study of current architecture (Proprietary tool’s functionalities, Existing used internal tools).
+Study of possible implementations for the migration.
+Compared solution proposed time / effort needed.
+Implementation of the best solution.
+Dealt with multithreading/concurrence to correct performance issues.
+****
 
 .Development and Support on a Java Web Application
-	Web applications execute checks on running applications / servers.
-	Support and Developments on User Interface and Back-End. Some project management.
+****
+Web applications execute checks on running applications / servers.
+Support and Developments on User Interface and Back-End. Some project management.
+****

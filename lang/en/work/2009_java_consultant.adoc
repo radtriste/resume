@@ -1,8 +1,10 @@
-==== 2009: Java Consultant
-November 2009 - January 2013, Astek SE, Sophia-Antipolis [FR]
+=== 2009-2013: Java Consultant
+[small]_Astek SE, Sophia-Antipolis [FR]_
 
 .Development and Support on 3 different Java SE/EE projects
-	Support and Developments on User Interface and Back-End.
-	Improvement of the application based on user’s feedbacks.
-	Creation of Visual documentation tool for XML Schema. 
-	Study of the integration of a CMS into the current systems.
+****
+Support and Developments on User Interface and Back-End.
+Improvement of the application based on user’s feedbacks.
+Creation of Visual documentation tool for XML Schema. 
+Study of the integration of a CMS into the current systems.
+****

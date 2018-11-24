@@ -1,9 +1,8 @@
-==== 2009: Project graduation
-April - September 2009, Atos Origin, Grenoble [FR]
+=== 2009: Project graduation
+[small]_Atos Origin, Grenoble [FR]_
 
-.Développement et maintenance sur 3 projets internes Java SE/EE différents
-	
-	Développement et maintenance à la fois de l’interface utilisateur mais également de la partie serveur/base de données. 
-	Amélioration des applications, basées sur les retours des utilisateurs. 
-	Création d’un outil de visualisation et de documentation de schémas XML. 
-	Etude de l´intégration d’un CMS dans le système en place.
+.Etude et Implémentation en Java d’un exćuteur de scripts Groovy sur une base de données en temps-réel (écrite en C).
+****
+Etude de l’application existante et des besoins décrits dans les spécifications. 
+Implémentation d’un exécuteur de scripts Groovy accédant à la base de données.
+****

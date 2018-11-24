@@ -1,21 +1,13 @@
-[cols="2",frame="none",grid="cols"]
-|===
-a|
 ****
 *Tristan Radisson (06/08/1986)* +
 *{footer_address}:* Karwendelstr 28 81369 Munich, Germany +
 *{footer_phone} (DE):* +49 (0) 1573 / 0110107 +
 *{footer_phone} (FR):* +33 (0) 6 98 97 59 60 +
 *{footer_mail}:* tristan.radisson@gmail.com +
-****
- a|
-****
-*Website:* https://resume.tradisson.fr/ +
+
+*{footer_website}:* https://resume.tradisson.fr/ +
 *Github:* https://github.com/radtriste +
 *Gitlab:* https://github.com/radtriste +
 *Hackerrank:* https://www.codingame.com/profile/c47fc7d3254181e47a4357308d651b975280892 +
 *Codinggame:* https://www.hackerrank.com/tristan_radisson +
-****
-|===
-
-	
+****	

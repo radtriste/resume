@@ -1,24 +1,32 @@
-==== 2016: Software and Infrastructure Architect
-Since Oct 2016, Lebensversicherung von 1871 a.G. München, Munich [DE]
+=== Since 2016: Software and Infrastructure Architect
+[small]_Lebensversicherung von 1871 a.G. München, Munich [DE]_
 
 .Study and migration of internal systems to the Cloud
-
-	Integration of Spring Cloud services into current systems architecture (Eureka, Configuration servers, Zuul Proxy ...).
-	Study and review of a Inhouse Cloud Platform: Cloud Foundry (SaaS) and Kubernetes (CaaS).
-	Installation of a Kubernetes Cluster: IBM Cloud Private and Openshift.
-	Integration and Review of associated systems: Istio, Helm and Open Service Broker.
-	Performing trainings provided to other developers.
+****
+Integration of Spring Cloud services (Eureka, Configuration servers, Gateway ...). +
+Study and review of a Inhouse Cloud Platform: Cloud Foundry (SaaS) and Kubernetes (CaaS). +
+Installation of a Kubernetes Cluster: IBM Cloud Private and Openshift. +
+Integration and Review of associated systems: Istio, Helm and Open Service Broker. +
+Performing trainings provided to other developers.
+****
 
 .Continuous Integration/Deployment (CI/CD)
-	Development of a shared library in Jenkins (remote) as well as Gradle plugin (local).
-	Creation of Gitlab Pipelines.
+****
+Development of a shared library in Jenkins (remote) as well as Gradle plugin (local).
+Creation of Gitlab Pipelines.
+****
 
 .Integration of the OAuth standard
-	Setup of an OAuth server (RedHat Keycloak).
-	Interconnections with corporate LDAPs (Domino & Active Directory) and setup of Kerberos.
+****
+Setup of an OAuth server (RedHat Keycloak).
+Interconnections with corporate LDAPs (Domino & Active Directory) and setup of Kerberos.
+****
 
 .Architecture and development of a documentation project
-	Microservices architecture.
-	Retrieve documentation data from running systems: Swagger API, WSDL files, Interactions with other applications, Application ́s information... (discovery of systems is done via Discovery).
-	Storage in ElasticSearch / Neo4j / MySQL). 
-	Development of an Angular Web UI to view all the gathered information.
+****
+Microservices architecture.
+Retrieve documentation data from running systems.
+Data: Swagger API, WSDL, Interactions with other applications, Application ́s information...
+Storage in ElasticSearch / Neo4j / MySQL. 
+Development of an Angular Web UI to view all the gathered information.
+****
