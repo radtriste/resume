@@ -1,13 +1,15 @@
-:lang: en
+// For test purpose only
+// :lang: en
+
+:imagesdir: images
+
 include::lang/{lang}/attributes.adoc[Missing lang attributes !!!!]
 
-= Tristan Radisson {job_title}
+== {job_title}
 
-'''
-
+**
 include::lang/{lang}/objectives.adoc[Missing objectives !!!!]
-
-'''
+**
 
 include::work.adoc[Missing work !!!!]
 
@@ -20,5 +22,6 @@ include::languages.adoc[Missing languages !!!!]
 include::activities.adoc[Missing activities !!!!]
 
 '''
+== More Information
 
 include::footer.adoc[Missing footer !!!!]

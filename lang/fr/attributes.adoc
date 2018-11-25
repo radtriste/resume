@@ -12,4 +12,5 @@
 :footer_phone: Téléphone
 :footer_address: Adresse
 :footer_mail: E-Mail
-:footer_website: Site Web
+:footer_websites: Site(s) Web
+:footer_birthdate: Date de naissance 

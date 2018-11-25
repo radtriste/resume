@@ -3,8 +3,8 @@
 
 .Development and Support on 3 different Java SE/EE projects
 ****
-Support and Developments on User Interface and Back-End.
-Improvement of the application based on user’s feedbacks.
-Creation of Visual documentation tool for XML Schema. 
+Support and Developments on User Interface and Back-End. +
+Improvement of the application based on user’s feedbacks. +
+Creation of Visual documentation tool for XML Schema.  +
 Study of the integration of a CMS into the current systems.
 ****

@@ -1,4 +1,4 @@
-:job_title: Java Developer/architect
+:job_title: Java Architect/Developer
 
 :work_title: Work Experience
 :competences_title: Competences
@@ -12,4 +12,5 @@
 :footer_phone: Phone
 :footer_address: Address
 :footer_mail: Mail
-:footer_website: Website
+:footer_websites: Website(s)
+:footer_birthdate: Birthdate

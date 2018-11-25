@@ -3,22 +3,22 @@
 
 .Réalisation d’un tableau de bord pour le planning et l’automatisation de scripts
 ****
-Etude des besoins des utilisateurs. 
-Analyse technique et fonctionnelle de l’outil et analyse de l’architecture. 
+Etude des besoins des utilisateurs.  +
+Analyse technique et fonctionnelle de l’outil et analyse de l’architecture.  +
 Développement d’une interface utilisateur (Javascript) et de services REST (Java/MySQL).
 ****
 
 .Migration d’un outil propriétaire vers des outils internes
 ****	
-Etude des architecture existantes (outil propriétaire et outils internes existants). 
-Etude de possibles implémentations pour la migration. 
-Implémentation de la solution jugée la plus adaptée. 
+Etude des architecture existantes (outil propriétaire et outils internes existants).  +
+Etude de possibles implémentations pour la migration.  +
+Implémentation de la solution jugée la plus adaptée.  +
 Principales difficultés: Concurrence et Multithreading pour corriger des problèmes de performance.
 ****
 
 .Développement et maintenance sur une Application Web Java
 ****	
-L’application exécute des scripts sur des applications/serveurs. 
-Développement de l’interface utilisateur ainsi que de la partie serveur/base de données. 
+L’application exécute des scripts sur des applications/serveurs.  +
+Développement de l’interface utilisateur ainsi que de la partie serveur/base de données.  +
 Un peu de management de projet effectué.
 ****

@@ -1,13 +1,20 @@
+.Tristan Radisson
 ****
-*Tristan Radisson (06/08/1986)* +
-*{footer_address}:* Karwendelstr 28 81369 Munich, Germany +
+*{footer_address}:* Karwendelstr 28, DE-81369 Munich +
+*{footer_mail}:* tristan.radisson@gmail.com +
 *{footer_phone} (DE):* +49 (0) 1573 / 0110107 +
 *{footer_phone} (FR):* +33 (0) 6 98 97 59 60 +
-*{footer_mail}:* tristan.radisson@gmail.com +
+*{footer_birthdate}*: 06/08/1986 +
+****
 
-*{footer_website}:* https://resume.tradisson.fr/ +
+.{footer_websites}
+****
+*Personal:* https://resume.tradisson.fr/ +
 *Github:* https://github.com/radtriste +
 *Gitlab:* https://github.com/radtriste +
-*Hackerrank:* https://www.codingame.com/profile/c47fc7d3254181e47a4357308d651b975280892 +
-*Codinggame:* https://www.hackerrank.com/tristan_radisson +
+*Hackerrank:* https://www.hackerrank.com/tristan_radisson +
+*Codinggame:* https://www.codingame.com/profile/c47fc7d3254181e47a4357308d651b975280892 +
 ****	
+
+image::18_11_17_profile (©Ole Zimmer).jpg[Profile]
+[small]_@Ole Zimmer_
