@@ -1,34 +1,26 @@
 == {competences_title}
 
-[cols="2",frame="none",grid="cols"]
-|===
-a| 
-* *Java/Frameworks*
-  - Java 8
-  - Spring (Boot/Cloud/JPA/Security)
-  - Java EE 6&7
-  - Build: Maven, Gradle
-  - Servers: Wildfly server (8+/Swarm)
-* *Cloud*
-  - Docker/Docker Swarm
-  - Kubernetes
-  - Cloud Foundry
-  - Istio
-  - Helm
-  - Open Service Broker
-  - Openshift
- a|
-* *CI/CD*
-  - Jenkins Pipeline
-  - Gitlab Pipeline
-* *Web*
-  - Angular 4+
-  - JQuery
-* *{competences_databases_title_name}*
-  - SQL: H2/MySQL
-  - NoSQL: MongoDB, Neo4j
-  - Elasticsearch
-* *{competences_others_title_name}*
-  - Eclipse, Spring Tool Suite, Intellij
-  - Office
-|===
+[horizontal]
+*Java*::
+  Java 8 +
+  Spring (Boot/Cloud/JPA/Security) +
+  Java EE 6&7 +
+  _Build:_ Maven, Gradle + 
+  _Servers:_ Wildfly server (8+/Swarm)
+*Cloud*::
+  Docker / Docker Swarm + 
+  Kubernetes / IBM Cloud Private / Openshift +
+  Istio / Helm / Open Service Broker +
+  Cloud Foundry
+*CI/CD*::
+  Jenkins and Gitlab Pipelines
+*Web*::
+  Angular 4+,
+  JQuery
+*{competences_databases_title_name}*::
+  _SQL:_ H2/MySQL +
+  _NoSQL:_ MongoDB, Neo4j +
+  Elasticsearch
+*{competences_others_title_name}*::
+  Eclipse, Spring Tool Suite, Intellij,
+  Office

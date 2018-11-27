@@ -12,5 +12,6 @@
 :footer_phone: Phone
 :footer_address: Address
 :footer_mail: Mail
-:footer_websites: Website(s)
+:footer_websites: Links
+:footer_information: Personal Information
 :footer_birthdate: Birthdate

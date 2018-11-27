@@ -1,3 +1,6 @@
-- *Français: Langue maternelle*
-- *Anglais: Pratique professionnelle.* TOEIC 830/990 en 2007. 7 ans de pratique en milieu professionnel (2009-2016).
-- *Allemand: Pratique professionnelle.* 2 ans de pratique en milieu professionnel (2016-2018).
+[horizontal]
+Français:: *Langue maternelle*
+Anglais:: *Pratique professionnelle.* + 
+	TOEIC 830/990 en 2007. 7 ans de pratique en milieu professionnel (2009-2016).
+Allemand:: *Pratique professionnelle.* +
+	2 ans de pratique en milieu professionnel (2016-2018).

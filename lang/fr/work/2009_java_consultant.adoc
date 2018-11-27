@@ -1,10 +1,8 @@
-=== 2009-2013: Java Consultant
+=== Java Consultant (2009-2013)
 [small]_Astek SE, Sophia-Antipolis [FR]_
 
-.Développement et maintenance sur 3 projets internes Java SE/EE différents
-****
-Développement de l’interface utilisateur mais également de la partie serveur/base de données. + 
-Amélioration des applications, basées sur les retours des utilisateurs. +
-Création d’un outil de visualisation et de documentation de schémas XML. +
-Etude de l´intégration d’un CMS dans le système en place.
-****
+Développement et maintenance sur 3 projets internes Java SE/EE différents::
+	Développement de l’interface utilisateur mais également de la partie serveur/base de données. + 
+	Amélioration des applications, basées sur les retours des utilisateurs. +
+	Création d’un outil de visualisation et de documentation de schémas XML. +
+	Etude de l´intégration d’un CMS dans le système en place.

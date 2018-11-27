@@ -1,29 +1,22 @@
-=== Depuis 2016: Software and Infrastructure Architect
+=== Software and Infrastructure Architect (depuis 2016)
 [small]_Lebensversicherung von 1871 a.G. München, Munich [DE]_
 
-.Etude et réalisation en cours d’une migration des applications vers le Cloud
-****
-Intégration de concepts Cloud dans l’architecture en place: Discovery, Configuration server, Gateway. +
-Etude et mise en place d´un Cluster Kubernetes interne: IBM Cloud Private et Openshift ainsi que de technologies associées: Istio, Helm, Open Service Broker.  +
-Mise en place de formations pour les développeurs.
-****
 
-.Intégration Continue/Déploiement continu (CI/CD)
-****
-Développement de librairies partagées Jenkins (remote) et plugin Gradle (local). + 
-Mise en place de pipelines Gitlab CI.
-****
+Etude et réalisation en cours d’une migration des applications vers le Cloud::
+	Intégration de concepts Cloud dans l’architecture en place: Discovery, Configuration server, Gateway. +
+	Etude et mise en place d´un Cluster Kubernetes interne: IBM Cloud Private et Openshift ainsi que de technologies associées: Istio, Helm, Open Service Broker.  +
+	Mise en place de formations pour les développeurs.
 
-.Intégration du standard OAuth
-****
-Installation du server OAuth RedHat Keycloak.  +
-Interconnexions de Keycloak avec les 2 LDAPs de l´entreprise (Domino & Active Directory) et mise en place de Kerberos.
-****
+Intégration Continue/Déploiement continu (CI/CD)::
+	Développement de librairies partagées Jenkins (remote) et plugin Gradle (local). + 
+	Mise en place de pipelines Gitlab CI.
 
-.Développement d’un projet de documentation
-****
-Architecture en microservices afin de collecter des informations sur les applications existantes. +
-Données: API Swagger, WSDL, interactions entre applications, information.  +
-Stockage: ElasticSearch, Neo4j, MySQL.  +
-Interface web pour visualiser toutes les informations collectées.
-****
+Intégration du standard OAuth::
+	Installation du server OAuth RedHat Keycloak.  +
+	Interconnexions de Keycloak avec les 2 LDAPs de l´entreprise (Domino & Active Directory) et mise en place de Kerberos.
+
+Développement d’un projet de documentation::
+	Architecture en microservices afin de collecter des informations sur les applications existantes. +
+	Données: API Swagger, WSDL, interactions entre applications, information.  +
+	Stockage: ElasticSearch, Neo4j, MySQL.  +
+	Interface web pour visualiser toutes les informations collectées.
