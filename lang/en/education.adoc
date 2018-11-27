@@ -1,3 +1,4 @@
-- 2015: *Oracle Certified Associate, Java SE 7 Programmer.*
-- 2009: *Engineering Master Degree from Grenoble-INP Ensimag.*
-- September 2008 – March 2009: ​ *Exchange at the University of Karlsruhe (Germany), Faculty of Computer Science.*
+[horizontal]
+2015:: *Oracle Certified Associate, Java SE 7 Programmer.*
+2009:: *Engineering Master Degree from Grenoble-INP Ensimag.*
+September 2008 – March 2009:: ​ *Exchange at the University of Karlsruhe (Germany), Faculty of Computer Science.*

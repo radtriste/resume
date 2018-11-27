@@ -1,0 +1,11 @@
+:toc:
+
+== (FR) Projet CV
+
+J´utilise ce projet pour générer mon CV en 2 langues: Francais et Anglais.
+Celui-ci génère 2 formats différents: html et pdf. 
+
+== (EN) Resume project
+
+I use this project to build my project  in 2 languages: French and English.
+This generates 2 different formats: html and pdf.

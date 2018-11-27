@@ -1,7 +1,6 @@
 === Software and Infrastructure Architect (depuis 2016)
 [small]_Lebensversicherung von 1871 a.G. München, Munich [DE]_
 
-
 Etude et réalisation en cours d’une migration des applications vers le Cloud::
 	Intégration de concepts Cloud dans l’architecture en place: Discovery, Configuration server, Gateway. +
 	Etude et mise en place d´un Cluster Kubernetes interne: IBM Cloud Private et Openshift ainsi que de technologies associées: Istio, Helm, Open Service Broker.  +
