@@ -33,7 +33,9 @@ code{background-color: var(--secondarycolor) !important;color:var(--white)}
 th{background-color: var(--tertiarycolor);color:var(--white) !important;}
 
 #toc.toc2{background-color:#2C001E;color:white;}
-#toc.toc2.a{color:white;}
+#toc.toc2 a{color:white;}
+/*#toc.toc2 a{color:#c1d0e6;}
+#toc.toc2 a:hover{color:#9fb9e0;}*/
 #toctitle{color:#E95420;}
 
 /* Responsiveness fixes */

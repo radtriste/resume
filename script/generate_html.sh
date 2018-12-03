@@ -1,6 +1,6 @@
 #!/bin/bash
 
-htmlCss="ubuntu.css"
+htmlCss="fedora.css"
 
 cmdPrefix=$1
 lang=$2
