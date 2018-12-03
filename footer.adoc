@@ -2,39 +2,24 @@
 
 [.float-group]
 --
-*Tristan Radisson*
-
 [.right]
 image::18_11_17_profile (©Ole Zimmer).jpg[Profile,300,200,caption="_@Ole Zimmer_"]
 
-[horizontal]
-{footer_address}:: Karwendelstr 28, DE-81369 Munich
-[horizontal]
-{footer_mail}:: tristan.radisson@gmail.com
-[horizontal]
-{footer_phone} (DE):: +49 (0) 1573 / 0110107
-[horizontal]
-{footer_phone} (FR):: +33 (0) 6 98 97 59 60
-[horizontal]
-{footer_birthdate}:: 06/08/1986
+*Tristan Radisson* +
+*{footer_address}:* Karwendelstr 28, 81369 Munich ({footer_address_country}) +
+*{footer_mail}:* tristan.radisson@gmail.com +
+*{footer_phone} (DE):* +49 (0) 1573 / 0110107 +
+*{footer_phone} (FR):* +33 (0) 6 98 97 59 60 +
+*{footer_birthdate}:* 06/08/1986
 --
 
 == {footer_websites}
+ 
+*link:https://resume.tradisson.fr/{footer_link_lang_ext}[{footer_website_cv} html^]* */* 
+*link:https://resume.tradisson.fr/{footer_link_lang_ext}radisson_resume.pdf[{footer_website_cv} pdf^]*
 
-https://resume.tradisson.fr/
-
-[horizontal]
-Linkedin:: 
-	https://www.linkedin.com/in/tristan-radisson-88924315/
-[horizontal]
-Github:: 
-	https://github.com/radtriste
-[horizontal]
-Gitlab:: 
-	https://gitlab.com/radtriste
-[horizontal]
-Hackerrank:: 
-	https://www.hackerrank.com/tristan_radisson
-[horizontal]
-Codingame:: 
-	https://www.codingame.com/profile/c47fc7d3254181e47a4357308d651b975280892 
+*link:https://www.linkedin.com/in/tristan-radisson-88924315/[LinkedIn^]* */*
+*link:https://github.com/radtriste[Github^]* */*
+*link:https://gitlab.com/radtriste[Gitlab^]* */*
+*link:https://www.hackerrank.com/tristan_radisson[Hackerrank^]* */*
+*link:https://www.codingame.com/profile/c47fc7d3254181e47a4357308d651b975280892[Codingame^]* 

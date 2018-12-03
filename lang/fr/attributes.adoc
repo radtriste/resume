@@ -9,9 +9,12 @@
 :competences_databases_title_name: Base de données
 :competences_others_title_name: Autres
 
+:footer_website_cv: CV
 :footer_phone: Téléphone
 :footer_address: Adresse
+:footer_address_country: Allemagne
 :footer_mail: E-Mail
 :footer_websites: Liens
 :footer_information: Information personnelles
-:footer_birthdate: Date de naissance 
+:footer_birthdate: Date de naissance
+:footer_link_lang_ext: fr/

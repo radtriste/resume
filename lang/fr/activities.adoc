@@ -1,4 +1,3 @@
-[horizontal]
-Sports:: Arbitre de rugby, vélo, randonnées, escalade sur blocs.
-Chant:: Chanteur dans une chorale classique (basse)
-Voyages:: Portugal, Norvège, USA, Irlande, Australie, Grèce, Canada, Islande...
+*Sports:* Arbitre de rugby, vélo, randonnées, escalade sur blocs. +
+*Chant:* Chanteur dans une chorale classique (basse). +
+*Voyages*: Portugal, Norvège, USA, Irlande, Australie, Grèce, Canada, Islande...

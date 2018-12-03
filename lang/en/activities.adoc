@@ -1,4 +1,3 @@
-[horizontal]
-Sports:: Rugby refereeing, biking, hiking, bouldering.
-Music:: Classic choir singer (bass).
-Travel:: Portugal, Norway, USA, Ireland, Australia, Greece, Canada, Iceland...
+*Sports:* Rugby refereeing, biking, hiking, bouldering. +
+*Music:* Classic choir singer (bass). +
+*Travel:* Portugal, Norway, USA, Ireland, Australia, Greece, Canada, Iceland...

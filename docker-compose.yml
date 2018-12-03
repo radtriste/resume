@@ -1,0 +1,7 @@
+version: '3.4'
+services:
+  resume:
+    build: .
+    image: tra/resume:test
+    ports:
+      - "80"
