@@ -1,23 +1,65 @@
 image: docker:latest
 
 variables:
-  IMAGE_NAME: radtriste/resume
+  REGISTRY: registry.gitlab.com
+  IMAGE_NAME: $REGISTRY/radtriste/resume:latest
+
+  OUTPUT_DIR: dist
+  HTML_OUTPUT_FILE: "index.html"
+  PDF_OUTPUT_FILE: "resume_radisson.pdf"
+
+  HTML_THEME: "ubuntu.css"
+  PDF_THEME: "theme.yml"
+
+  HTML_CMD_ARGS: "-a stylesheet=./themes/html/$HTML_THEME -a data-uri -a icons -a toc2 -a toclevels=3 -a lang=$LANG -o $OUTPUT_DIR/$LANG/$HTML_OUTPUT_FILE index.adoc"
+  PDF_CMD_ARGS: "-a pdf-style=./themes/pdf/$PDF_THEME -a lang=$LANG -o $OUTPUT_DIR/$LANG/$PDF_OUTPUT_FILE index.adoc"
 
 stages:
 - build-docs
-- build-docker
+- docker
+
+cache:
+  paths:
+  - dist/
 
 services:
   - docker:dind
 
-build-docs:
+.build:docs:
   stage: build-docs
   before_script:
-  - chmod u+x generate_with_docker.sh
+  - rm -rf "$OUTPUT_DIR/$LANG"
   script:
-  - ./generate_with_docker.sh
+  - echo "HTML_CMD_ARGS = $HTML_CMD_ARGS"
+  - echo "PDF_CMD_ARGS = $PDF_CMD_ARGS"
+  - echo "$LANG"
+  - docker run --rm -v $(pwd):/documents/ asciidoctor/docker-asciidoctor asciidoctor $HTML_CMD_ARGS
+  - docker run --rm -v $(pwd):/documents/ asciidoctor/docker-asciidoctor asciidoctor-pdf $PDF_CMD_ARGS
+  - ls -al dist/
+  after_script:
+  # copy asciidoctor.css for HTML
+  - cp themes/html/asciidoctor.css "$OUTPUT_DIR/$LANG"
+  artifacts:
+    paths:
+    - "$OUTPUT_DIR/$LANG"
 
-build-docker:
-  stage: build-docker
+build:docs:fr:
+  extends: .build:docs
+  variables:
+    LANG: fr
+
+build:docs:en:
+  extends: .build:docs
+  variables:
+    LANG: en
+
+build and push image:
+  stage: docker
+  before_script:
+  - docker login -u gitlab-ci-token -p "${CI_BUILD_TOKEN:-$CI_JOB_TOKEN}" $REGISTRY
   script:
-    - docker build -t $IMAGE_NAME .
+  - docker build -t $IMAGE_NAME .
+  - docker push $IMAGE_NAME
+  dependencies:
+  - build:docs:fr
+  - build:docs:en
