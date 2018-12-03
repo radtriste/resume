@@ -1,6 +1,6 @@
 image: docker:latest
 
-environment:
+variables:
   IMAGE_NAME: radtriste/resume
 
 stages:
