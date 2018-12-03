@@ -1,0 +1,10 @@
+== {footer_websites}
+ 
+*link:https://resume.tradisson.fr/{footer_link_lang_ext}[{footer_website_cv} (html)^]* */* 
+*link:https://resume.tradisson.fr/{footer_link_lang_ext}radisson_resume.pdf[{footer_website_cv} (pdf)^]*
+
+*link:https://www.linkedin.com/in/tristan-radisson-88924315/[LinkedIn^]* */*
+*link:https://github.com/radtriste[Github^]* */*
+*link:https://gitlab.com/radtriste[Gitlab^]* */*
+*link:https://www.hackerrank.com/tristan_radisson[Hackerrank^]* */*
+*link:https://www.codingame.com/profile/c47fc7d3254181e47a4357308d651b975280892[Codingame^]* 
