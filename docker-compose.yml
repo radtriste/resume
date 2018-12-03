@@ -2,6 +2,6 @@ version: '3.4'
 services:
   resume:
     build: .
-    image: tra/resume:test
+    image: radtriste/resume:test
     ports:
       - "80"
