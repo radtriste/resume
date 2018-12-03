@@ -1,9 +1,23 @@
 image: docker:latest
 
+environment:
+  IMAGE_NAME: radtriste/resume
+
+stages:
+- build-docs
+- build-docker
+
 services:
   - docker:dind
 
-build:
-  stage: build
+build-docs:
+  stage: build-docs
+  before_script:
+  - chmod u+x generate_with_docker.sh
   script:
-    - docker build -t test .
+  - ./generate_with_docker.sh
+
+build-docker:
+  stage: build-docker
+  script:
+    - docker build -t $IMAGE_NAME .
