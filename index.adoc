@@ -1,6 +1,5 @@
 // For test purpose only
 // :lang: en
-// :base_url: ./
 
 include::conf/{lang}/attributes.adoc[Missing lang attributes !!!!]
 

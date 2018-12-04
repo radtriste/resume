@@ -33,8 +33,8 @@ services:
   - docker login -u gitlab-ci-token -p "${CI_BUILD_TOKEN:-$CI_JOB_TOKEN}" $REGISTRY
   - echo "$IMAGE_NAME:$CI_COMMIT_SHA"
   script:
-  - docker run --rm -v $(pwd):/documents/ asciidoctor/docker-asciidoctor asciidoctor $COMMON_ARGS $COMMON_HTML_ARGS -a lang=$LANG -a website_prefix=$WEBSITE_URL -a pdfName=$PDF_FILE -o /documents/$OUTPUT_DIR/index.html /documents/index.adoc
-  - docker run --rm -v $(pwd):/documents/ asciidoctor/docker-asciidoctor asciidoctor-pdf $COMMON_ARGS $COMMON_PDF_ARGS -a lang=$LANG -a website_prefix=$WEBSITE_URL -o /documents/$OUTPUT_DIR/$PDF_FILE /documents/index.adoc
+  - docker run --rm -v $(pwd):/documents/ asciidoctor/docker-asciidoctor asciidoctor $COMMON_ARGS $COMMON_HTML_ARGS -a lang=$LANG -a website_url=$WEBSITE_URL -a pdfName=$PDF_FILE -o /documents/$OUTPUT_DIR/index.html /documents/index.adoc
+  - docker run --rm -v $(pwd):/documents/ asciidoctor/docker-asciidoctor asciidoctor-pdf $COMMON_ARGS $COMMON_PDF_ARGS -a lang=$LANG -a website_url=$WEBSITE_URL -o /documents/$OUTPUT_DIR/$PDF_FILE /documents/index.adoc
   - cp themes/html/asciidoctor.css $OUTPUT_DIR
   - cp -r images/ $OUTPUT_DIR
   - docker build --build-arg LANG=$LANG -t $IMAGE_NAME:$CI_COMMIT_SHA .
