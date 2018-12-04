@@ -1,0 +1,9 @@
+== {footer_websites}
+
+*link:https://www.linkedin.com/in/tristan-radisson-88924315/[LinkedIn^]* */*
+*link:https://github.com/radtriste[Github^]* */*
+*link:https://gitlab.com/radtriste[Gitlab^]* */*
+*link:https://www.hackerrank.com/tristan_radisson[Hackerrank^]* */*
+*link:https://www.codingame.com/profile/c47fc7d3254181e47a4357308d651b975280892[Codingame^]*
+
+*link:{website_url}[{footer_website}^]*

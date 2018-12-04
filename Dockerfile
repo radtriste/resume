@@ -1,13 +1,5 @@
 FROM nginx
 
-RUN mkdir /tmp/resume
-COPY dist/ /tmp/resume/
+COPY dist/ /usr/share/nginx/html/
 
-# Install asciidoctor
-# Install asciidoctor-pdf
-# Run generate.sh script
-
-# COPY files
-RUN cp /tmp/resume/en/* /usr/share/nginx/html
-RUN mkdir -p /usr/share/nginx/html/fr
-RUN cp /tmp/resume/fr/* /usr/share/nginx/html/fr/
+RUN cp -r /usr/share/nginx/html/index/* /usr/share/nginx/html/ && rm -rf /usr/share/nginx/html/index
