@@ -40,6 +40,7 @@ td{background-color: var(--maincolor);color: var(--black) !important}
 a{color: var(--linkcolor)}
 #toc.toc2{background-color:#111111;}
 #toc.toc2 a{color:#c8ccd8;}
+#toc.toc2 a:link{color:#c8ccd8;}
 #toctitle{color:#9aa3b5;}
 
 /* Responsiveness fixes */
