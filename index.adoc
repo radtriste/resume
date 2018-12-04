@@ -1,9 +1,42 @@
-== Tristan Radisson
+// For test purpose only
+// :lang: en
+// :base_url: ./
+
+include::conf/{lang}/attributes.adoc[Missing lang attributes !!!!]
 
 :imagesdir: images
 
-image:fr-icon.png[alt=Français,width=30]::
-[big]#*link:fr/[Architecte/Développeur Java]*#
+:docinfo1:
 
-image:en-icon.png[alt=English,width=30]::
-[big]#*link:en/[Java Architect/Developer]*#
+== Tristan Radisson
+
+[big]#*{job_title}*#
+
+[.left]
+image::18_11_17_profile (©Ole Zimmer).jpg[Profile,300,200,caption="_@Ole Zimmer_"]
+
+*{address}:* Karwendelstr 28, 81369 Munich ({country}) +
+*{mail}:* tristan.radisson@gmail.com +
+*{phone} (DE):* +49 (0) 1573 / 0110107 +
+*{phone} (FR):* +33 (0) 6 98 97 59 60 +
+*{birthdate}:* 06/08/1986
+
+'''
+
+**
+include::parts/objectives.adoc[Missing objectives !!!!]
+**
+
+include::parts/work.adoc[Missing work !!!!]
+
+include::parts/competences.adoc[Missing competences !!!!]
+
+include::parts/education.adoc[Missing education !!!!]
+
+include::parts/languages.adoc[Missing languages !!!!]
+
+include::parts/activities.adoc[Missing activities !!!!]
+
+'''
+
+include::parts/footer.adoc[Missing footer !!!!]
