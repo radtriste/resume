@@ -6,6 +6,7 @@
 :mail: E-Mail
 :birthdate: Date de naissance
 
+:objectives_title: Résumé
 :work_title: Expérience
 :competences_title: Compétences
 :education_title: Formation

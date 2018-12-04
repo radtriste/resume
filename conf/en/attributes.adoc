@@ -6,6 +6,7 @@
 :mail: Mail
 :birthdate: Birthdate
 
+:objectives_title: Objectives
 :work_title: Work Experience
 :competences_title: Competences
 :education_title: Education

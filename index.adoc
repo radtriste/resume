@@ -26,9 +26,7 @@ image::18_11_17_profile(Ole Zimmer).jpg[Profile,300,200,caption=""]
 
 '''
 
-**
 include::parts/objectives.adoc[Missing objectives !!!!]
-**
 
 include::parts/work.adoc[Missing work !!!!]
 
