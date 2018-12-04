@@ -2,9 +2,13 @@ image: docker:latest
 
 variables:
   REGISTRY: registry.gitlab.com
-  IMAGE_NAME: radtriste/resume
+  DOCKER_IMAGE: registry.gitlab.com/radtriste/resume
   
-  WEBSITE_URL: https://resume.tradisson.fr/
+  WEBSITE_URL_FR: https://cv.tradisson.fr/
+  WEBSITE_URL_EN: https://resume.tradisson.fr/
+  
+  PDF_FILE_FR: radisson_cv.pdf
+  PDF_FILE_EN: radisson_resume.pdf
   
   STYLE_HTML: fedora.css
   STYLE_PDF: theme.yml 
@@ -12,73 +16,69 @@ variables:
   DIST_FOLDER: dist
 
 stages:
-- build docs
-- docker
-- prod
+- build
+- deploy
 
 services:
   - docker:dind
 
-.build:docs:
-  stage: build docs
+.build:image:
+  stage: build
+  variables:
+    COMMON_ARGS: -a website_fr=$WEBSITE_URL_FR -a website_en=$WEBSITE_URL_EN
+    COMMON_HTML_ARGS: -a stylesheet=/documents/themes/html/$STYLE_HTML -a icons -a toc2 -a toclevels=3
+    COMMON_PDF_ARGS: -a pdf-style=/documents/themes/pdf/$STYLE_PDF 
   before_script:
   - rm -rf $OUTPUT_DIR
+  - docker login -u gitlab-ci-token -p "${CI_BUILD_TOKEN:-$CI_JOB_TOKEN}" $REGISTRY
+  - echo "$IMAGE_NAME:$CI_COMMIT_SHA"
   script:
-  - docker run --rm -v $(pwd):/documents/ asciidoctor/docker-asciidoctor asciidoctor -a stylesheet=/documents/themes/html/$STYLE_HTML -a icons -a toc2 -a toclevels=3 -a lang=$LANG -a website_url=$WEBSITE_URL -o /documents/$OUTPUT_DIR/index.html /documents/docs/index.adoc
-  - docker run --rm -v $(pwd):/documents/ asciidoctor/docker-asciidoctor asciidoctor-pdf -a pdf-style=/documents/themes/pdf/$STYLE_PDF -a lang=$LANG -a website_url=$WEBSITE_URL -o /documents/$OUTPUT_DIR/radisson_resume.pdf /documents/docs/index.adoc
-  - cp themes/html/asciidoctor.css $OUTPUT_DIR
-  - cp -r docs/images/ $OUTPUT_DIR
-  artifacts:
-    paths:
-    - "$OUTPUT_DIR"
-
-build:docs:fr:
-  extends: .build:docs
-  variables:
-    OUTPUT_DIR: "$DIST_FOLDER/fr"
-    LANG: fr
-
-build:docs:en:
-  extends: .build:docs
-  variables:
-    OUTPUT_DIR: "$DIST_FOLDER/en"
-    LANG: en
-    
-build:index:
-  stage: build docs
-  variables:
-    OUTPUT_DIR: "$DIST_FOLDER/index"
-  before_script:
-  - rm -rf "$OUTPUT_DIR"
-  script:
-  - docker run --rm -v $(pwd):/documents/ asciidoctor/docker-asciidoctor asciidoctor -a stylesheet=/documents/themes/html/$STYLE_HTML -a icons -o /documents/$OUTPUT_DIR/index.html /documents/index.adoc
+  - docker run --rm -v $(pwd):/documents/ asciidoctor/docker-asciidoctor asciidoctor $COMMON_ARGS $COMMON_HTML_ARGS -a lang=$LANG -a website_prefix=$WEBSITE_URL -a pdfName=$PDF_FILE -o /documents/$OUTPUT_DIR/index.html /documents/index.adoc
+  - docker run --rm -v $(pwd):/documents/ asciidoctor/docker-asciidoctor asciidoctor-pdf $COMMON_ARGS $COMMON_PDF_ARGS -a lang=$LANG -a website_prefix=$WEBSITE_URL -o /documents/$OUTPUT_DIR/$PDF_FILE /documents/index.adoc
   - cp themes/html/asciidoctor.css $OUTPUT_DIR
   - cp -r images/ $OUTPUT_DIR
-  artifacts:
-    paths:
-    - "$OUTPUT_DIR"
+  - docker build --build-arg LANG=$LANG -t $IMAGE_NAME:$CI_COMMIT_SHA .
+  - docker push $IMAGE_NAME:$CI_COMMIT_SHA
 
-build and push image:
-  stage: docker
+build:image:fr:
+  extends: .build:image
+  variables:
+    LANG: fr
+    OUTPUT_DIR: $DIST_FOLDER/fr
+    WEBSITE_URL: $WEBSITE_URL_FR
+    PDF_FILE: $PDF_FILE_FR
+    IMAGE_NAME: $DOCKER_IMAGE/fr
+
+build:image:en:
+  extends: .build:image
+  variables:
+    LANG: en
+    OUTPUT_DIR: $DIST_FOLDER/en
+    WEBSITE_URL: $WEBSITE_URL_EN
+    PDF_FILE: $PDF_FILE_EN
+    IMAGE_NAME: $DOCKER_IMAGE/en
+
+
+##################################################
+## Deploy
+
+.deploy:tag_image:
+  stage: deploy
   before_script:
   - docker login -u gitlab-ci-token -p "${CI_BUILD_TOKEN:-$CI_JOB_TOKEN}" $REGISTRY
-  - echo "Commit sha = $CI_COMMIT_SHA"
   script:
-  - docker build -t $REGISTRY/$IMAGE_NAME:$CI_COMMIT_SHA .
-  - docker push $REGISTRY/$IMAGE_NAME:$CI_COMMIT_SHA
-  dependencies:
-  - build:docs:fr
-  - build:docs:en
-  - build:index
-
-tag_image:
-  stage: prod
-  before_script:
-  - docker login -u gitlab-ci-token -p "${CI_BUILD_TOKEN:-$CI_JOB_TOKEN}" $REGISTRY
-  - echo "Commit sha = $CI_COMMIT_SHA"
-  script:
-  - docker pull $REGISTRY/$IMAGE_NAME:$CI_COMMIT_SHA
-  - docker tag $REGISTRY/$IMAGE_NAME:$CI_COMMIT_SHA $REGISTRY/$IMAGE_NAME:latest
-  - docker push $REGISTRY/$IMAGE_NAME:latest
+  - docker pull $IMAGE_NAME:$CI_COMMIT_SHA
+  - docker tag $IMAGE_NAME:$CI_COMMIT_SHA $IMAGE_NAME:latest
+  - docker push $IMAGE_NAME:latest
   only:
   - master
+  
+deploy:tag_image:fr:
+  extends: .deploy:tag_image
+  variables:
+    IMAGE_NAME: $DOCKER_IMAGE/fr
+    
+deploy:tag_image:en:
+  extends: .deploy:tag_image
+  variables:
+    IMAGE_NAME: $DOCKER_IMAGE/en

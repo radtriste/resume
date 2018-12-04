@@ -9,21 +9,12 @@ cd $EXEC_DIR
 STYLE_HTML="fedora.css"
 STYLE_PDF="theme.yml"
 OUTPUT_DIR="dist"
-INPUT_DIR_DOCS="docs"
 
-# Variables
-unset lang
-unset baseUrl
-
-unset inputDir
 unset outputDir
-unset outputFile
+unset pdfOutputFile
 
-function generate_html {	
-	local outputFile="index.html"
-	local outputDir="$OUTPUT_DIR/$lang"
-	
-	htmlCmdArgs="-a stylesheet=$EXEC_DIR/themes/html/$STYLE_HTML -a icons -a toc2 -a toclevels=3 -a lang=$lang -a website_url=../ -o $outputDir/$outputFile $inputDir/index.adoc"
+function generate_html {		
+	htmlCmdArgs="-a stylesheet=$EXEC_DIR/themes/html/$STYLE_HTML -a icons -a toc2 -a toclevels=3 -a lang=$lang -a website_fr=../fr/ -a website_en=../en/  -a website_prefix=$website_prefix -a pdfName=$pdfOutputFile -o $outputDir/index.html index.adoc"
 	
 	echo "Generate with HTML cmdPrefix = $cmdPrefix and lang = $lang"
 	cmd="asciidoctor $htmlCmdArgs"
@@ -31,14 +22,11 @@ function generate_html {
 	eval "$cmd"
 	
 	cp ./themes/html/asciidoctor.css $outputDir
-	cp -r $inputDir/images/ $outputDir
+	cp -r images/ $outputDir
 }
 
-function generate_pdf {	
-	local outputFile="radisson_resume.pdf"
-	local outputDir="$OUTPUT_DIR/$lang"
-	
-	pdfCmdArgs="-a pdf-style=$EXEC_DIR/themes/pdf/$STYLE_PDF -a lang=$lang -a website_url=../ -o $outputDir/$outputFile $inputDir/index.adoc"
+function generate_pdf {		
+	pdfCmdArgs="-a pdf-style=$EXEC_DIR/themes/pdf/$STYLE_PDF -a lang=$lang -a website_fr=../fr/ -a website_en=../en/ -a website_prefix=$website_prefix -o $outputDir/$pdfOutputFile index.adoc"
 	
 	echo "Generate with HTML cmdPrefix = $cmdPrefix and lang = $lang"
 	cmd="asciidoctor-pdf $pdfCmdArgs"
@@ -47,22 +35,25 @@ function generate_pdf {
 	eval "$cmd"
 }
 
-echo "Got cmdPrefix = $cmdPrefix"
+lang=$1
 
-rm -rf dist/
+if [[ -z "$lang" ]]; then
+	lang="en"
+fi
 
-inputDir=$INPUT_DIR_DOCS
+if [[ "$lang" = "en" ]]; then
+	pdfOutputFile="radisson_resume.pdf"
+	website_prefix="resume"
+elif [[ "$lang" = "fr" ]]; then
+	pdfOutputFile="radisson_cv.pdf"
+	website_prefix="cv"
+else
+	echo "Unknown language ..."
+	return 1
+fi
 
-lang="en"
+outputDir="$OUTPUT_DIR/$lang"
+rm -rf outputDir
+
 generate_html
 generate_pdf
-
-lang="fr"
-generate_html
-generate_pdf
-
-# Generate main index.html
-cmd="-a stylesheet=$EXEC_DIR/themes/html/$STYLE_HTML -a icons -o $OUTPUT_DIR/index/index.html index.adoc"
-eval "asciidoctor $cmd"
-cp ./themes/html/asciidoctor.css $OUTPUT_DIR/index/
-cp -r ./images $OUTPUT_DIR/index

@@ -1,5 +1,5 @@
 FROM nginx
 
-COPY dist/ /usr/share/nginx/html/
+ARG LANG
 
-RUN cp -r /usr/share/nginx/html/index/* /usr/share/nginx/html/ && rm -rf /usr/share/nginx/html/index
+COPY dist/$LANG/ /usr/share/nginx/html/

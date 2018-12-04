@@ -5,3 +5,9 @@ services:
     image: radtriste/resume:test
     ports:
       - "80"
+      
+  cv:
+    build: .
+    image: radtriste/cv:test
+    ports:
+      - "80"
