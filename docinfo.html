@@ -1,12 +1,35 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
+var intro = '<span style="display:none">'+
+	'Source code can be found here: https://gitlab.com/radtriste/resume (2 domains => 2 docker images)'+
+	'	<br/>'+
+	'	For server administration, I am using those projects:'+
+	'	<br>'+
+	'	https://github.com/jwilder/nginx-proxy'+
+	'	https://github.com/JrCs/docker-letsencrypt-nginx-proxy-companion'+
+	'</span>'
+
+var toc_links = '<p>'+
+	'<span class="image"><a class="image" href="{website_fr}"><img src="images/fr-icon.png" alt="En francais&quot;" width="30"></a></span>' +
+	' - ' +
+	'<span class="image"><a class="image" href="{website_en}"><img src="images/en-icon.png" alt="In English&quot;" width="30"></a></span>' +
+	'<br/> ' +
+	'<span class="small"><a href="{pdfName}" target="_blank">PDF version</a></span>' +
+	'</p>'
+
 $( document ).ready(function() {
-	$('#toctitle').prepend('<p>'+
-			'<span class="image"><a class="image" href="{website_fr}"><img src="images/fr-icon.png" alt="En francais&quot;" width="30"></a></span>' +
-			' - ' +
-			'<span class="image"><a class="image" href="{website_en}"><img src="images/en-icon.png" alt="In English&quot;" width="30"></a></span>' +
-			'<br/> ' +
-			'<span class="small"><a href="{pdfName}" target="_blank">PDF version</a></span>' +
-			'</p>')
+	$('#toctitle').prepend(intro)
+	$('#toctitle').prepend(toc_links)
+	
+	// TODO Update age instead of birth date ...
+	var birthday = Date.parse("August 06, 1986")
+    var ageDiff = Date.now() - birthday;
+    var msPerYear = 31536000000;
+    var myAge = Math.floor(ageDiff / msPerYear);
+    
+    var element = $("strong:contains('{age_nb}')")
+    element.text(element.text().replace("{age_nb}", myAge))
+	  
+	
 });
 </script>

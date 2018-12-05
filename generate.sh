@@ -1,59 +1,54 @@
-#!/bin/bash
-
-EXEC_DIR=`pwd`
-cd `dirname $0`
-SCRIPT_DIR=`pwd`
-cd $EXEC_DIR
+#!/bin/sh
 
 # Constants
 STYLE_HTML="fedora.css"
 STYLE_PDF="theme.yml"
-OUTPUT_DIR="dist"
+PDF_FILE_FR="radisson_cv.pdf"
+PDF_FILE_EN="radisson_resume.pdf"
 
-unset outputDir
-unset pdfOutputFile
+# Calculate age
+msPerYear=31536000
+mydate=`date --date="1986-08-06 00:00:00" +%s`
+now=`date +%s`
+diff=`expr $now - $mydate`
+PDF_AGE=`expr $diff / $msPerYear`
+echo "Age = $PDF_AGE"
 
-function generate_html {		
-	htmlCmdArgs="-a stylesheet=$EXEC_DIR/themes/html/$STYLE_HTML -a icons -a toc2 -a toclevels=3 -a lang=$lang -a website_fr=../fr/ -a website_en=../en/  -a website_url=$website_prefix -a pdfName=$pdfOutputFile -o $outputDir/index.html index.adoc"
-	
-	echo "Generate with HTML cmdPrefix = $cmdPrefix and lang = $lang"
-	cmd="asciidoctor $htmlCmdArgs"
-	echo $cmd
-	eval "$cmd"
-	
-	cp ./themes/html/asciidoctor.css $outputDir
-	cp -r images/ $outputDir
-}
-
-function generate_pdf {		
-	pdfCmdArgs="-a pdf-style=$EXEC_DIR/themes/pdf/$STYLE_PDF -a lang=$lang -a website_fr=../fr/ -a website_en=../en/ -a website_url=$website_prefix -o $outputDir/$pdfOutputFile index.adoc"
-	
-	echo "Generate with HTML cmdPrefix = $cmdPrefix and lang = $lang"
-	cmd="asciidoctor-pdf $pdfCmdArgs"
-	echo $cmd
-	
-	eval "$cmd"
-}
-
-lang=$1
-
-if [[ -z "$lang" ]]; then
-	lang="en"
+# Setup variables
+if test -z "$GENERATION_LANG"; then
+	echo "No GENERATION_LANG env variable found"
+	return 1
 fi
 
-if [[ "$lang" = "en" ]]; then
-	pdfOutputFile="radisson_resume.pdf"
-	website_url="https://resume.tradisson.fr"
-elif [[ "$lang" = "fr" ]]; then
-	pdfOutputFile="radisson_cv.pdf"
-	website_url="https://cv.tradisson.fr"
+if test "$GENERATION_LANG" = "en"; then
+	PDF_FILENAME=$PDF_FILE_EN
+	WEBSITE_URL=$WEBSITE_URL_EN
+elif test "$GENERATION_LANG" = "fr"; then
+	PDF_FILENAME=$PDF_FILE_FR
+	WEBSITE_URL=$WEBSITE_URL_FR
 else
 	echo "Unknown language ..."
 	return 1
 fi
 
-outputDir="$OUTPUT_DIR/$lang"
-rm -rf outputDir
+OUTPUT_DIR="$DIST_FOLDER/$GENERATION_LANG"
+COMMON_GENERATION_ARGS="-a website_fr=$WEBSITE_URL_FR -a website_en=$WEBSITE_URL_EN -a lang=$GENERATION_LANG -a website_url=$WEBSITE_URL"
+COMMON_GENERATION_HTML_ARGS="-a stylesheet=themes/html/$STYLE_HTML -a icons -a toc2 -a toclevels=3 -a pdfName=$PDF_FILENAME"
+COMMON_GENERATION_PDF_ARGS="-a pdf-style=themes/pdf/$STYLE_PDF -a age_nb=$PDF_AGE"
 
-generate_html
-generate_pdf
+
+# Launch commands
+rm -rf $OUTPUT_DIR
+mkdir -p $OUTPUT_DIR
+
+# Generate HTML
+cmd="$GENERATION_COMMAND_PREFIX asciidoctor $COMMON_GENERATION_ARGS $COMMON_GENERATION_HTML_ARGS -o $OUTPUT_DIR/index.html index.adoc"
+echo $cmd
+$cmd
+cp themes/html/asciidoctor.css $OUTPUT_DIR
+cp -r images/ $OUTPUT_DIR
+
+# Generate pdf
+cmd="$GENERATION_COMMAND_PREFIX asciidoctor-pdf $COMMON_GENERATION_ARGS $COMMON_GENERATION_PDF_ARGS -o $OUTPUT_DIR/$PDF_FILENAME index.adoc"
+echo $cmd
+$cmd

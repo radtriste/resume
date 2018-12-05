@@ -5,6 +5,7 @@ services:
       context: .
       args:
         LANG: en
+        DIST_FOLDER: dist
     image: radtriste/resume/en:test
     ports:
       - "8080:80"
@@ -14,6 +15,7 @@ services:
       context: .
       args:
         LANG: fr
+        DIST_FOLDER: dist
     image: radtriste/resume/fr:test
     ports:
       - "8081:80"

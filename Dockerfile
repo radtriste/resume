@@ -1,5 +1,6 @@
 FROM nginx
 
 ARG LANG
+ARG DIST_FOLDER="dist"
 
-COPY dist/$LANG/ /usr/share/nginx/html/
+COPY $DIST_FOLDER/$LANG/ /usr/share/nginx/html/

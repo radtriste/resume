@@ -6,13 +6,6 @@ variables:
   
   WEBSITE_URL_FR: https://cv.tradisson.fr/
   WEBSITE_URL_EN: https://resume.tradisson.fr/
-  
-  PDF_FILE_FR: radisson_cv.pdf
-  PDF_FILE_EN: radisson_resume.pdf
-  
-  STYLE_HTML: fedora.css
-  STYLE_PDF: theme.yml 
-
   DIST_FOLDER: dist
 
 stages:
@@ -23,39 +16,25 @@ services:
   - docker:dind
 
 .build:image:
-  stage: build
-  variables:
-    COMMON_ARGS: -a website_fr=$WEBSITE_URL_FR -a website_en=$WEBSITE_URL_EN
-    COMMON_HTML_ARGS: -a stylesheet=/documents/themes/html/$STYLE_HTML -a icons -a toc2 -a toclevels=3
-    COMMON_PDF_ARGS: -a pdf-style=/documents/themes/pdf/$STYLE_PDF 
+  stage: build   
   before_script:
-  - rm -rf $OUTPUT_DIR
   - docker login -u gitlab-ci-token -p "${CI_BUILD_TOKEN:-$CI_JOB_TOKEN}" $REGISTRY
-  - echo "$IMAGE_NAME:$CI_COMMIT_SHA"
+  - chmod u+x generate.sh
   script:
-  - docker run --rm -v $(pwd):/documents/ asciidoctor/docker-asciidoctor asciidoctor $COMMON_ARGS $COMMON_HTML_ARGS -a lang=$LANG -a website_url=$WEBSITE_URL -a pdfName=$PDF_FILE -o /documents/$OUTPUT_DIR/index.html /documents/index.adoc
-  - docker run --rm -v $(pwd):/documents/ asciidoctor/docker-asciidoctor asciidoctor-pdf $COMMON_ARGS $COMMON_PDF_ARGS -a lang=$LANG -a website_url=$WEBSITE_URL -o /documents/$OUTPUT_DIR/$PDF_FILE /documents/index.adoc
-  - cp themes/html/asciidoctor.css $OUTPUT_DIR
-  - cp -r images/ $OUTPUT_DIR
-  - docker build --build-arg LANG=$LANG -t $IMAGE_NAME:$CI_COMMIT_SHA .
+  - export GENERATION_COMMAND_PREFIX="docker run --rm -v $(pwd):/documents/ asciidoctor/docker-asciidoctor " && ./generate.sh
+  - docker build --build-arg LANG=$GENERATION_LANG --build-arg DIST_FOLDER=$DIST_FOLDER -t $IMAGE_NAME:$CI_COMMIT_SHA .
   - docker push $IMAGE_NAME:$CI_COMMIT_SHA
 
 build:image:fr:
   extends: .build:image
   variables:
-    LANG: fr
-    OUTPUT_DIR: $DIST_FOLDER/fr
-    WEBSITE_URL: $WEBSITE_URL_FR
-    PDF_FILE: $PDF_FILE_FR
+    GENERATION_LANG: fr
     IMAGE_NAME: $DOCKER_IMAGE/fr
 
 build:image:en:
   extends: .build:image
   variables:
-    LANG: en
-    OUTPUT_DIR: $DIST_FOLDER/en
-    WEBSITE_URL: $WEBSITE_URL_EN
-    PDF_FILE: $PDF_FILE_EN
+    GENERATION_LANG: en
     IMAGE_NAME: $DOCKER_IMAGE/en
 
 
