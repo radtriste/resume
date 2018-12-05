@@ -9,3 +9,7 @@ Celui-ci génère 2 formats différents: html et pdf.
 
 I use this project to build my project  in 2 languages: French and English.
 This generates 2 different formats: html and pdf.
+
+=== HTML themes
+
+https://github.com/darshandsoni/asciidoctor-skins
