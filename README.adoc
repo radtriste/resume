@@ -1,15 +1,28 @@
 :toc:
 
-== (FR) Projet CV
+== Project
 
-J´utilise ce projet pour générer mon CV en 2 langues: Francais et Anglais.
-Celui-ci génère 2 formats différents: html et pdf. 
+I use this project to build my resume in 2 languages: French and English.
 
-== (EN) Resume project
-
-I use this project to build my project  in 2 languages: French and English.
-This generates 2 different formats: html and pdf.
+This also generates 2 different formats: html and pdf. +
+I am using asciidoctor to generate both documents.
 
 === HTML themes
 
+I inspired my current theme from here:
+
 https://github.com/darshandsoni/asciidoctor-skins
+
+=== PDF themes
+
+I tweaked the default theme.
+
+== Gitlab Deployment
+
+As you can see into the gitlab-ci.yml file, I am building 2 different docker images, one for each language. +
+Both images are built on top of an nginx.
+
+For the runtime of those applications, I am using those 2 projects:
+
+- https://github.com/jwilder/nginx-proxy
+- https://github.com/JrCs/docker-letsencrypt-nginx-proxy-companion
