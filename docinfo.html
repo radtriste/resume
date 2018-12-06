@@ -1,13 +1,11 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
-var intro = '<span style="display:none">'+
-	'Source code can be found here: https://gitlab.com/radtriste/resume (2 domains => 2 docker images)'+
+var intro = 'Source code can be found here: https://gitlab.com/radtriste/resume'+
 	'	<br/>'+
 	'	For server administration, I am using those projects:'+
 	'	<br>'+
 	'	https://github.com/jwilder/nginx-proxy'+
-	'	https://github.com/JrCs/docker-letsencrypt-nginx-proxy-companion'+
-	'</span>'
+	'	https://github.com/JrCs/docker-letsencrypt-nginx-proxy-companion'
 
 var toc_links = '<p>'+
 	'<span class="image"><a class="image" href="{website_fr}"><img src="images/fr-icon.png" alt="En francais&quot;" width="30"></a></span>' +
@@ -18,7 +16,7 @@ var toc_links = '<p>'+
 	'</p>'
 
 $( document ).ready(function() {
-	$('#toctitle').prepend(intro)
+	$('head').prepend(intro)
 	$('#toctitle').prepend(toc_links)
 	
 	// TODO Update age instead of birth date ...
