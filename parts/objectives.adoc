@@ -1,3 +1,1 @@
-== {objectives_title}
-
 include::lang/{lang}/objectives.adoc[Missing objectives !!!!]

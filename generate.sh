@@ -42,13 +42,13 @@ rm -rf $OUTPUT_DIR
 mkdir -p $OUTPUT_DIR
 
 # Generate HTML
-cmd="$GENERATION_COMMAND_PREFIX asciidoctor $COMMON_GENERATION_ARGS $COMMON_GENERATION_HTML_ARGS -o $OUTPUT_DIR/index.html index.adoc"
+cmd="$GENERATION_COMMAND_PREFIX asciidoctor $COMMON_GENERATION_ARGS $COMMON_GENERATION_HTML_ARGS -o $OUTPUT_DIR/index.html html.adoc"
 echo $cmd
 $cmd
 cp themes/html/asciidoctor.css $OUTPUT_DIR
 cp -r images/ $OUTPUT_DIR
 
 # Generate pdf
-cmd="$GENERATION_COMMAND_PREFIX asciidoctor-pdf $COMMON_GENERATION_ARGS $COMMON_GENERATION_PDF_ARGS -o $OUTPUT_DIR/$PDF_FILENAME index.adoc"
+cmd="$GENERATION_COMMAND_PREFIX asciidoctor-pdf $COMMON_GENERATION_ARGS $COMMON_GENERATION_PDF_ARGS -o $OUTPUT_DIR/$PDF_FILENAME pdf.adoc"
 echo $cmd
 $cmd

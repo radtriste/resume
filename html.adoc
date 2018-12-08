@@ -1,0 +1,42 @@
+// For test purpose only
+// :lang: en
+
+include::conf/{lang}/attributes.adoc[Missing lang attributes !!!!]
+
+:imagesdir: images
+
+:docinfo1:
+
+== Tristan Radisson
+
+[big]#*{job_title}*#
+
+[.float-group]
+--
+[.left]
+.(C)Ole Zimmer
+image::18_11_17_profile(Ole Zimmer).jpg[Profile,300,200,caption=""]
+
+// age_nb will be replaced into js code of html 
+*{address}:* Karwendelstr 28, 81369 Munich ({country}) +
+*{mail}:* tristan.radisson@gmail.com +
+*{phone} (DE):* +49 (0) 1573 / 0110107 +
+*{phone} (FR):* +33 (0) 6 98 97 59 60 +
+*{age_nb} {age}*
+--
+
+== {objectives_title}
+
+include::parts/objectives.adoc[Missing objectives !!!!]
+
+include::parts/work.adoc[Missing work !!!!]
+
+include::parts/competences.adoc[Missing competences !!!!]
+
+include::parts/education.adoc[Missing education !!!!]
+
+include::parts/languages.adoc[Missing languages !!!!]
+
+include::parts/activities.adoc[Missing activities !!!!]
+
+include::parts/footer.adoc[Missing footer !!!!]
