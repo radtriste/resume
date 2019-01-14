@@ -23,8 +23,8 @@ include::parts/languages.adoc[Missing languages !!!!]
 
 include::parts/activities.adoc[Missing activities !!!!]
 
-include::parts/footer.adoc[Missing footer !!!!]
-
 == Information
 
 include::parts/info.adoc[Missing info !!!!]
+
+{website_url}

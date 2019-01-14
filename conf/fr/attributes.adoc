@@ -16,5 +16,5 @@
 :competences_databases_title_name: Base de données
 :competences_others_title_name: Autres
 
-:footer_website: Site web personnel
-:footer_websites: Liens
+:links_website: Site web personnel
+:links_websites: Liens
