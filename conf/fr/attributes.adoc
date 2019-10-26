@@ -1,4 +1,4 @@
-:job_title: Ingénieur Qualité Senior
+:job_title: Senior Quality Engineer
 
 :phone: Téléphone
 :address: Adresse
