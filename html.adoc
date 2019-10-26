@@ -15,7 +15,7 @@ include::parts/info.adoc[Missing info !!!!]
 
 == {objectives_title}
 
-include::parts/objectives.adoc[Missing objectives !!!!]
+#include::parts/objectives.adoc[Missing objectives !!!!]
 
 include::parts/work.adoc[Missing work !!!!]
 

@@ -11,7 +11,7 @@ include::conf/{lang}/attributes.adoc[Missing lang attributes !!!!]
 
 === {job_title} 
 
-include::parts/objectives.adoc[Missing objectives !!!!]
+#include::parts/objectives.adoc[Missing objectives !!!!]
 
 include::parts/work.adoc[Missing work !!!!]
 
