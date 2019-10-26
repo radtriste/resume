@@ -13,7 +13,7 @@ include::conf/{lang}/attributes.adoc[Missing lang attributes !!!!]
 
 include::parts/info.adoc[Missing info !!!!]
 
-== {objectives_title}
+// == {objectives_title}
 
 //include::parts/objectives.adoc[Missing objectives !!!!]
 
