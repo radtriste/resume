@@ -1,4 +1,4 @@
-:job_title: Java Architect/Developer
+:job_title: Senior Quality Engineer
 
 :phone: Phone
 :address: Address
