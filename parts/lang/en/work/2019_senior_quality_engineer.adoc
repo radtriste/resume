@@ -1,3 +1,6 @@
 === Senior Quality Engineer (since 2019)
 [small]_Red Hat [Remote FR]_
 
+* Red Hat Process Automation Manager
+* Red Hat Decision Manager
+* Kogito
