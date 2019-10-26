@@ -1,5 +1,7 @@
 == {work_title}
 
+include::lang/{lang}/work/2019_senior_quality_engineer.adoc[2019_senior_quality_engineer !!!!]
+
 include::lang/{lang}/work/2016_architect.adoc[Missing lang 2016_architect !!!!]
 
 include::lang/{lang}/work/2014_software_engineer.adoc[Missing lang 2014_soft_engineer !!!!]
