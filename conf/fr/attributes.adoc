@@ -2,7 +2,7 @@
 
 :phone: Téléphone
 :address: Adresse
-:country: Allemagne
+:country: France
 :mail: E-Mail
 :age: ans
 
