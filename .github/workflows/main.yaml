@@ -1,0 +1,57 @@
+name: Build & Push containers
+
+on:
+  - push
+
+env:
+  WEBSITE_URL_FR: https://cv.tradisson.fr/
+  WEBSITE_URL_EN: https://resume.tradisson.fr/
+
+jobs:
+  resume-en:
+    runs-on: ubuntu-latest
+    env:
+      GENERATION_LANG: en
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2
+      
+      - name: Generate final document(s)
+        run: |
+          chmod u+x generate.sh
+          export GENERATION_COMMAND_PREFIX="docker run --rm -v $(pwd):/documents/ asciidoctor/docker-asciidoctor "
+          ./generate.sh
+
+      - name: Build and push container
+        uses: docker/build-push-action@v1
+        with:
+          registry: quay.io
+          username: ${{ secrets.QUAY_USERNAME }}
+          password: ${{ secrets.QUAY_PASSWORD }}
+          build_args: LANG=${{ env.GENERATION_LANG }}
+          repository: radtriste/resume
+          tags: ${{ env.GENERATION_LANG }}
+  
+  resume-fr:
+    runs-on: ubuntu-latest
+    env:
+      GENERATION_LANG: fr
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2
+      
+      - name: Generate final document(s)
+        run: |
+          chmod u+x generate.sh
+          export GENERATION_COMMAND_PREFIX="docker run --rm -v $(pwd):/documents/ asciidoctor/docker-asciidoctor "
+          ./generate.sh
+
+      - name: Build and push container
+        uses: docker/build-push-action@v1
+        with:
+          registry: quay.io
+          username: ${{ secrets.QUAY_USERNAME }}
+          password: ${{ secrets.QUAY_PASSWORD }}
+          build_args: LANG=${{ env.GENERATION_LANG }}
+          repository: radtriste/resume
+          tags: ${{ env.GENERATION_LANG }}

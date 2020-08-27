@@ -1,5 +1,7 @@
 #!/bin/sh
 
+DIST_FOLDER="dist"
+
 # Constants
 STYLE_HTML="fedora.css"
 STYLE_PDF="theme.yml"
