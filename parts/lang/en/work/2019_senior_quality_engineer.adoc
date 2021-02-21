@@ -1,6 +1,11 @@
 === Senior Quality Engineer (since 2019)
 [small]_Red Hat [Remote FR]_
 
-* Red Hat Process Automation Manager
-* Red Hat Decision Manager
-* Kogito
+**Business Automation Team - Kogito project** +
+(https://kogito.kie.org/)
+
+* Setup of BDD testing for the Kogito cloud operator
+* Full setup of Nightly/Release pipelines for the whole Kogito project (runtimes + cloud images/operator)
+* Code reviews of the project, mainly for Pipeline and Cloud parts
+* Handling of community releases of Kogito
+* Working with internal teams for the productization of the project
