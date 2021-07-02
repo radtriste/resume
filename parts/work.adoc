@@ -1,13 +1,11 @@
 == {work_title}
 
-include::lang/{lang}/work/2019_senior_quality_engineer.adoc[2019_senior_quality_engineer !!!!]
+include::lang/{lang}/work/2019_redhat.adoc[Missing 2019_redhat !!!!]
 
-include::lang/{lang}/work/2016_architect.adoc[Missing lang 2016_architect !!!!]
+include::lang/{lang}/work/2016_lv1871.adoc[Missing 2016_lv1871 !!!!]
 
-include::lang/{lang}/work/2014_software_engineer.adoc[Missing lang 2014_soft_engineer !!!!]
+include::lang/{lang}/work/2013_amadeus.adoc[Missing 2013_amadeus !!!!]
 
-include::lang/{lang}/work/2013_software_developer.adoc[Missing lang 2014_soft_dev !!!!]
+include::lang/{lang}/work/2009_astek.adoc[Missing 2009_astek !!!!]
 
-include::lang/{lang}/work/2009_java_consultant.adoc[Missing lang 2009_java_consultant !!!!]
-
-include::lang/{lang}/work/2009_project_graduation.adoc[Missing lang 2009_project_graduation !!!!]
+include::lang/{lang}/work/2009_atos.adoc[Missing 2009_atos !!!!]

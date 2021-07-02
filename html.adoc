@@ -28,3 +28,5 @@ include::parts/languages.adoc[Missing languages !!!!]
 include::parts/activities.adoc[Missing activities !!!!]
 
 include::parts/links.adoc[Missing Links !!!!]
+
+_Code of this resume can be found here: https://github.com/radtriste/resume_

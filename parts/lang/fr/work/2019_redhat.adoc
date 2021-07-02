@@ -1,4 +1,14 @@
-=== Senior Quality Engineer (depuis 2019)
+=== Principal Software Quality Engineer (since 2021)
+[small]_Red Hat [Remote FR]_
+
+**Business Automation Team - Kogito project** +
+(https://kogito.kie.org/)
+
+* Contrôle qualité du projet Kogito et de ses releases via améliorations et maintenance
+* Participation aux revues de code, principalement sur les parties Pipeline et Cloud
+* Travail en interne pour la mise en place du produit, basé sur le projet communataire
+
+=== Senior Software Quality Engineer (2019-2021)
 [small]_Red Hat [Remote FR]_
 
 **Business Automation Team - Kogito project** +
