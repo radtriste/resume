@@ -1,4 +1,2 @@
-Actuellement en poste en tant qu’architecte d’application et d’infrastructure, je recherche un nouveau challenge dans le développement et l´architecture d´applications, si possible dans un contexte international. 
-Ceci peut aller de la mise en place de nouvelles applications mais également la modernisation de systèmes anciens. 
-Des applications sur des technologies Cloud sont un plus. 
-Actuellement sur Munich en Allemagne, je recherche un poste dans le sud de la France.
+Travaillant actuellement chez Red Hat en tant que Principal Software Quality Engineer, je suis à l'écoute d'opportunités orientées vers l'automatisation et les systèmes CI/CD (Jenkins / GitHub Action / Prow / Gitlab CI / Tekton / ArgoCD...).
+Je suis un membre actif dans la communauté du projet Kogito (https://kogito.kie.org/).

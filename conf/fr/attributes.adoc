@@ -1,4 +1,4 @@
-:job_title: Senior Quality Engineer
+:job_title: Principal Software Quality Engineer
 
 :phone: Téléphone
 :address: Adresse

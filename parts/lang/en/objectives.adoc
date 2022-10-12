@@ -1,3 +1,2 @@
-Currently working as an Infrastructure and Software Architect, I am looking for a new challenge into an international context, which provide architectural challenges and is offering remote working. 
-The challenge could be the modernization of old systems or the creation of a whole application from scratch. 
-Nice to have would be to work with Cloud systems.
+Currently working as a Principal Software Quality Engineer at Red Hat, I am opened to positions more oriented on the automation and CI/CD pipelines (Jenkins / GitHub Action / Prow / Gitlab CI / Tekton / ArgoCD...).
+I am an active member of the Kogito community (https://kogito.kie.org/).

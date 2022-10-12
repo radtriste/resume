@@ -19,7 +19,7 @@ echo "Age = $PDF_AGE"
 # Setup variables
 if test -z "$GENERATION_LANG"; then
 	echo "No GENERATION_LANG env variable found"
-	return 1
+	exit 1
 fi
 
 if test "$GENERATION_LANG" = "en"; then
