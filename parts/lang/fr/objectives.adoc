@@ -1,2 +1,2 @@
-Travaillant actuellement chez Red Hat en tant que Principal Software Quality Engineer, je suis à l'écoute d'opportunités orientées vers l'automatisation et les systèmes CI/CD (Jenkins / GitHub Action / Prow / Gitlab CI / Tekton / ArgoCD...).
+Travaillant actuellement chez Red Hat en tant que Principal Software Quality Engineer, je suis à l'écoute d'opportunités orientées vers le DevOps ou le développement Java.
 Je suis un membre actif dans la communauté du projet Kogito (https://kogito.kie.org/).

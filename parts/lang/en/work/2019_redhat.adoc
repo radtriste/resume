@@ -1,21 +1,23 @@
 === Principal Software Quality Engineer (since 2021)
 [small]_Red Hat [Remote FR]_
 
-**Business Automation Team - Kogito project** +
-(https://kogito.kie.org/)
+**Business Automation Team - Kogito Serverless Workflow project** +
+https://kogito.kie.org/ +
+https://kiegroup.github.io/kogito-docs/serverlessworkflow/latest/index.html
 
-* Assuring quality of the Kogito project and its releases by improving/maintaining those
-* Code reviews of the project, mainly for Pipeline and Cloud parts
+* Assuring quality of the Kogito serverless workflow project and its releases by improving/maintaining those
+* Development and Testing on Cloud images
+* Code reviews on the whole project
 * Working with internal teams for the productization of the project
 
 === Senior Software Quality Engineer (2019-2021)
 [small]_Red Hat [Remote FR]_
 
 **Business Automation Team - Kogito project** +
-(https://kogito.kie.org/)
+https://kogito.kie.org/
 
 * Setup of BDD testing for the Kogito cloud operator
-* Full setup of Nightly/Release pipelines for the whole Kogito project (Runtimes + Cloud images/operator)
+* Full setup of Nightly/Release pipelines for the whole Kogito project (Runtimes + Cloud images)
 * Code reviews of the project, mainly for Pipeline and Cloud parts
-* Handling of community releases of Kogito
+* Handling of community releases of the Kogito community project
 * Working with internal teams for the productization of the project

@@ -1,13 +1,15 @@
 == {competences_title}
 
-*Java*: Java 8, Spring, Spring Boot, Spring Cloud, Spring JPA, Spring Security, Java EE 6&7, Maven, Gradle, Wildfly server 8+, Wildfly Swarm
+*Languages*: Java, Groovy, Bash scripting, Golang, Python(basics)
 
-*Cloud*: Docker, Docker Swarm, Kubernetes, IBM Cloud Private, Openshift, Istio, Helm, Open Service Broker, Cloud Foundry
+*Java*: Quarkus, Spring (Boot, Cloud, JPA, Security), Java EE, Maven, Gradle
 
-*CI/CD*: Jenkins pipelines, Gitlab pipelines
+*Cloud*: Docker/Podman, Kubernetes, Openshift, Istio, Helm
 
-*Web*: Angular 4+, JQuery
+*CI/CD*: Jenkins (DSL, Pipelines), Github Actions, Gitlab pipelines
+
+*Web*: Angular, JQuery
 
 *{competences_databases_title_name}*: H2, MySQL, MongoDB, Neo4j, Elasticsearch
 
-*{competences_others_title_name}*: Eclipse, Spring Tool Suite, Intellij, Office
+*{competences_others_title_name}*: Eclipse, VSCode, Spring Tool Suite, Office
