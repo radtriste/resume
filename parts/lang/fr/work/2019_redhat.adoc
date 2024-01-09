@@ -1,7 +1,17 @@
 === Principal Software Quality Engineer (since 2021)
 [small]_Red Hat [Remote FR]_
 
-**Business Automation Team - Kogito Serverless Workflow project** +
+**OpenShift QE team** (since Oct 2023) +
+
+OpenShift Cluster Manager (https://docs.openshift.com/dedicated/ocm/ocm-overview.html) +
+Hosted Control Planes / Hypershift (https://github.com/openshift/hypershift)
+
+* Assuring quality of the HyperShift cluster creation on AWS
+* Automatisation des tests d'OpenShift Cluster Manager et de la création de clusters
+* Automatisation des tests de [ROSA Command Line](https://github.com/openshift/rosa)
+* Coordination and travail avec les autres équipes (dev, product) for la mise en place du produit
+
+**Business Automation Team - Kogito Serverless Workflow project** (2021-2023) +
 https://kogito.kie.org/ +
 https://kiegroup.github.io/kogito-docs/serverlessworkflow/latest/index.html
 
