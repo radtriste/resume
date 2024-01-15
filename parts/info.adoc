@@ -1,5 +1,5 @@
 // age_nb will be replaced into js code of html 
-*{address}:* 175 Chemin du Mas de Journet 30120 Le Vigan ({country}) +
-*{mail}:* tristan.radisson@gmail.com +
-*{phone} :* +33 (0) 6 98 97 59 60 +
-*{age_nb} {age}*
+175 Chemin du Mas de Journet +
+30120 Le Vigan ({country}) +
+tristan.radisson@gmail.com +
++33 (0) 6 98 97 59 60 +

@@ -7,11 +7,7 @@ include::conf/{lang}/attributes.adoc[Missing lang attributes !!!!]
 
 :docinfo1:
 
-== image:18_11_17_profile(Ole Zimmer).jpg[Profile,100,50,caption=""]  Tristan Radisson
-
-include::parts/info.adoc[Missing info !!!!]
-
-=== {job_title} 
+== image:18_11_17_profile(Ole Zimmer).jpg[width=100]  Tristan Radisson 
 
 include::parts/objectives.adoc[Missing objectives !!!!]
 

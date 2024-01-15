@@ -4,7 +4,7 @@ DIST_FOLDER="dist"
 
 # Constants
 STYLE_HTML="fedora.css"
-STYLE_PDF="theme.yml"
+STYLE_PDF="themes/default-theme.yml"
 PDF_FILE_FR="radisson_cv.pdf"
 PDF_FILE_EN="radisson_resume.pdf"
 
@@ -36,7 +36,7 @@ fi
 OUTPUT_DIR="$DIST_FOLDER/$GENERATION_LANG"
 COMMON_GENERATION_ARGS="-a website_fr=$WEBSITE_URL_FR -a website_en=$WEBSITE_URL_EN -a lang=$GENERATION_LANG -a website_url=$WEBSITE_URL"
 COMMON_GENERATION_HTML_ARGS="-a stylesheet=themes/html/$STYLE_HTML -a icons -a toc2 -a toclevels=3 -a pdfName=$PDF_FILENAME"
-COMMON_GENERATION_PDF_ARGS="-a pdf-style=themes/pdf/$STYLE_PDF -a age_nb=$PDF_AGE"
+COMMON_GENERATION_PDF_ARGS="-a pdf-theme=themes/pdf/$STYLE_PDF -a age_nb=$PDF_AGE"
 
 
 # Launch commands
