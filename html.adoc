@@ -9,9 +9,11 @@ include::conf/{lang}/attributes.adoc[Missing lang attributes !!!!]
 
 = image:18_11_17_profile(Ole Zimmer).jpg[Profile,100,50,caption=""]            Tristan Radisson
 
-[big]#*{job_title}*#
+[small]#Le Vigan (30), France# +
+[small]#tristan.radisson@gmail.com# +
+[small]#+33 (0) 6 98 97 59 60#
 
-include::parts/info.adoc[Missing info !!!!]
+[big]#*{job_title}*#
 
 include::parts/objectives.adoc[Missing objectives !!!!]
 
