@@ -7,7 +7,9 @@ include::conf/{lang}/attributes.adoc[Missing lang attributes !!!!]
 
 :docinfo1:
 
-== Tristan Radisson
+== image:18_11_17_profile(Ole Zimmer).jpg[Profile,100,50,caption=""]  Tristan Radisson
+
+include::parts/info.adoc[Missing info !!!!]
 
 === {job_title} 
 
@@ -17,14 +19,14 @@ include::parts/work.adoc[Missing work !!!!]
 
 include::parts/competences.adoc[Missing competences !!!!]
 
+include::parts/opensource.adoc[Missing Open Source projects !!!!]
+
 include::parts/education.adoc[Missing education !!!!]
 
 include::parts/languages.adoc[Missing languages !!!!]
 
 include::parts/activities.adoc[Missing activities !!!!]
 
-== Information
+include::parts/opensource.adoc[Missing Open Source projects !!!!]
 
-include::parts/info.adoc[Missing info !!!!]
-
-{website_url}
+include::parts/links.adoc[Missing Links !!!!]

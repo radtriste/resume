@@ -4,7 +4,7 @@
 
 *Java*: Quarkus, Spring (Boot, Cloud, JPA, Security), Java EE, Maven, Gradle
 
-*Cloud*: Docker/Podman, Kubernetes, Openshift, Terraform, Istio, Helm
+*Cloud*: Docker/Podman, Kubernetes, Openshift, Terraform, Istio, Helm, Knative
 
 *CI/CD*: Jenkins (DSL, Pipelines), Github Actions, Gitlab pipelines
 

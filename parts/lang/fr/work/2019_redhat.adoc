@@ -1,21 +1,14 @@
 === Principal Software Quality Engineer (since 2021)
 [small]_Red Hat [Remote FR]_
 
-**OpenShift QE team** (since Oct 2023) +
-
-OpenShift Cluster Manager (https://docs.openshift.com/dedicated/ocm/ocm-overview.html) +
-Hosted Control Planes / Hypershift (https://github.com/openshift/hypershift)
-
+OpenShift QE team (since Oct 2023)::
 * Assuring quality of the HyperShift cluster creation on AWS
 * Automatisation des tests d'OpenShift Cluster Manager et de la création de clusters
-* Automatisation des tests de [ROSA Command Line](https://github.com/openshift/rosa)
-* Automatisation des tests de [Terraform provider](https://github.com/terraform-redhat/terraform-rhcs-rosa)
+* Automatisation des tests de ROSA Command Line
+* Automatisation des tests de ROSA Terraform provider
 * Coordination and travail avec les autres équipes (dev, product) for la mise en place du produit
 
-**Business Automation Team - Kogito Serverless Workflow project** (2021-2023) +
-https://kogito.kie.org/ +
-https://kiegroup.github.io/kogito-docs/serverlessworkflow/latest/index.html
-
+Business Automation Team - Kogito Serverless Workflow project (2021-2023)::
 * Contrôle qualité du projet Kogito Serverless Workflow et de ses releases via améliorations et maintenance
 * Developpement et Tests des images Cloud
 * Participation aux revues de code du projet global
@@ -24,11 +17,9 @@ https://kiegroup.github.io/kogito-docs/serverlessworkflow/latest/index.html
 === Senior Software Quality Engineer (2019-2021)
 [small]_Red Hat [Remote FR]_
 
-**Business Automation Team - Kogito project** +
-https://kogito.kie.org/
-
+Business Automation Team - Kogito project::
 * Mise en place de tests business-oriented (BDD) pour l'Operator Cloud du projet
 * Mise en place complète de pipelines (nightly et release) d'automatisation pour le project entier (runtimes + images/operator cloud)
 * Participation aux revues de code, principalement sur les parties Pipeline et Cloud
 * Gestion des releases communautaires
-* Travail en interne pour la mise en place du produit, basé sur le projet communataire
+* Travail en interne pour la mise en place du produit, basé sur le projet communautaire

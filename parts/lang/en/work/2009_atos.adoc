@@ -2,5 +2,5 @@
 [small]_Atos Origin, Grenoble [FR]_
 
 Study and implementation in Java of an executor of Groovy scripts on a real-time database (written in C)::
-	Study of the existing application and the needs described into specifications.  +
-	Implementation of the executor of Groovy scripts.
+* Study of the existing application and the needs described into specifications
+* Implementation of the executor of Groovy scripts

@@ -1,0 +1,9 @@
+== {open_source_projects}
+
+**Hypershift:** https://github.com/openshift/hypershift +
+**OpenShift Cluster Manager (OCM) Command Line:** https://github.com/openshift-online/ocm-cli +
+**ROSA Command Line:** https://github.com/openshift/rosa +
+**ROSA Terraform Provider:** https://github.com/terraform-redhat/terraform-rhcs-rosa +
+
+**Kogito:** https://kogito.kie.org/ +
+**Kogito Serverless Workflow:** https://kiegroup.github.io/kogito-docs/serverlessworkflow/latest/index.html

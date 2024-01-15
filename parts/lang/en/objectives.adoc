@@ -1,2 +1,3 @@
-Currently working as a Principal Software Quality Engineer at Red Hat, I am opened to DevOps / Java development positions.
-I am an active member of the Kogito community (https://kogito.kie.org/).
+**Currently working as a Principal Software Quality Engineer at Red Hat, I am opened to Dev / DevOps positions.** +
+I was, until recently, an active member of the Kogito community and I am now part of the ROSA (Red Hat OpenShift Service on AWS) initiative. +
+My main competences are around the CI/CD pipelines (Jenkins/GitHub Actions), I have some knowledge of Infrastructure and I am a polyglot developer (Java, Golang, Bash).

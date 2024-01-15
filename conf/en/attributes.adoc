@@ -16,5 +16,7 @@
 :competences_databases_title_name: Databases
 :competences_others_title_name: Others
 
+:open_source_projects: Open Source Projects
+
 :links_website: Personal website
 :links_websites: Links

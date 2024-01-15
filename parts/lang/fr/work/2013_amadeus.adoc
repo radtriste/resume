@@ -1,42 +1,42 @@
 === Software Development Engineer (2014-2016)
 [small]_Amadeus Data Processing GmbH, Erding [DE]_
 
-Analyse technique d´un système de monitoring::
-	Analyse du stockage des données (time series) dans InfluxDB: temps de réponse divisés par 10 après améliorations.
-	
-Responsable de l’analyse technique d’un nouvel outil pour les clients::
-	Travail en collaboration avec les analystes pour une revue fonctionnelle du produit.  +
-	Responsable de l’architecture et de l’implémentation d’un prototype. +
-	Technologies: Java, Spring, AngularJS, MongoDB, MySQL.  +
-	Mise en place d’une architecture en microservices.
-	
+Analyse technique d'un système de monitoring::
+* Analyse du stockage des données (time series) dans InfluxDB: temps de réponse divisés par 10 après améliorations
+
+Responsable de l'analyse technique d'un nouvel outil pour les clients::
+* Travail en collaboration avec les analystes pour une revue fonctionnelle du produit
+* Responsable de l'architecture et de l'implémentation d'un prototype
+* Technologies: Java, Spring, AngularJS, MongoDB, MySQL
+* Mise en place d'une architecture en microservices
+* 
 Architecture, Développement et Support sur un outil de monitoring::
-	Développement et étude de modernisation sur un outil interne ayant 15 ans d’âge.  +
-	Migration de certaines fonctionnalités côté UI afin de commencer le processus de modernisation.
-	
-Modernisation complète d’un outil interne de diagnostic d’incidents::
-	Analyse du besoin des utilisateurs sur l’outil en place.  +
-	Etude de la flexibilité de l’architecture en place pour de futures améliorations.  +
-	Migration de l’interface utilisateur (Java Server Faces vers Javascript/REST services). +
-	Amélioration des fonctionnalités de l'interface suivant le besoin de l’utilisateur.  +
-	Migration et séparation de la logique serveur en plusieurs projets.  +
-	Analyse du modèle de données: migration d’un stockage SQL vers un stockage NoSQL (MongoDB).
+* Développement et étude de modernisation sur un outil interne ayant 15 ans d'âge
+* Migration de certaines fonctionnalités côté UI afin de commencer le processus de modernisation
+* 
+Modernisation complète d'un outil interne de diagnostic d'incidents::
+* Analyse du besoin des utilisateurs sur l'outil en place
+* Etude de la flexibilité de l'architecture en place pour de futures améliorations
+* Migration de l'interface utilisateur (Java Server Faces vers Javascript/REST services)
+* Amélioration des fonctionnalités de l'interface suivant le besoin de l'utilisateur
+* Migration et séparation de la logique serveur en plusieurs projets
+* Analyse du modèle de données: migration d'un stockage SQL vers un stockage NoSQL (MongoDB)
 
 === Software Developer (2013-2014)
 [small]_Amadeus Data Processing GmbH, Erding [DE]_
 
-Réalisation d’un tableau de bord pour le planning et l’automatisation de scripts::
-	Etude des besoins des utilisateurs.  +
-	Analyse technique et fonctionnelle de l’outil et analyse de l’architecture.  +
-	Développement d’une interface utilisateur (Javascript) et de services REST (Java/MySQL).
+Réalisation d'un tableau de bord pour le planning et l'automatisation de scripts::
+* Etude des besoins des utilisateurs
+* Analyse technique et fonctionnelle de l'outil et analyse de l'architecture
+* Développement d'une interface utilisateur (Javascript) et de services REST (Java/MySQL)
 
-Migration d’un outil propriétaire vers des outils internes::
-	Etude des architecture existantes (outil propriétaire et outils internes existants).  +
-	Etude de possibles implémentations pour la migration.  +
-	Implémentation de la solution jugée la plus adaptée.  +
-	Principales difficultés: Concurrence et Multithreading pour corriger des problèmes de performance.
+Migration d'un outil propriétaire vers des outils internes::
+* Etude des architecture existantes (outil propriétaire et outils internes existants)
+* Etude de possibles implémentations pour la migration
+* Implémentation de la solution jugée la plus adaptée
+* Principales difficultés: Concurrence et Multithreading pour corriger des problèmes de performance
 
 Développement et maintenance sur une Application Web Java::
-	L’application exécute des scripts sur des applications/serveurs.  +
-	Développement de l’interface utilisateur ainsi que de la partie serveur/base de données.  +
-	Un peu de management de projet effectué.
+* L'application exécute des scripts sur des applications/serveurs
+* Développement de l'interface utilisateur ainsi que de la partie serveur/base de données
+* Un peu de management de projet effectué
