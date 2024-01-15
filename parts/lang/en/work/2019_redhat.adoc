@@ -9,6 +9,7 @@ Hosted Control Planes / Hypershift (https://github.com/openshift/hypershift)
 * Assuring quality of the HyperShift cluster creation on AWS
 * Automation testing of OpenShift Cluster Manager and cluster creation
 * Automation testing of the [ROSA Command Line](https://github.com/openshift/rosa)
+* Automation testing of the [Terraform provider](https://github.com/terraform-redhat/terraform-rhcs-rosa)
 * Working with internal teams for the successful delivery of the project
 
 **Business Automation Team - Kogito Serverless Workflow project** +

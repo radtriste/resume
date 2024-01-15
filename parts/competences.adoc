@@ -1,10 +1,10 @@
 == {competences_title}
 
-*Languages*: Java, Groovy, Bash scripting, Golang, Python(basics)
+*Languages*: Java, Groovy, Golang, Bash scripting,  Python(basics)
 
 *Java*: Quarkus, Spring (Boot, Cloud, JPA, Security), Java EE, Maven, Gradle
 
-*Cloud*: Docker/Podman, Kubernetes, Openshift, Istio, Helm
+*Cloud*: Docker/Podman, Kubernetes, Openshift, Terraform, Istio, Helm
 
 *CI/CD*: Jenkins (DSL, Pipelines), Github Actions, Gitlab pipelines
 
