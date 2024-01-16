@@ -8,4 +8,4 @@ include::lang/{lang}/work/2013_amadeus.adoc[Missing 2013_amadeus !!!!]
 
 include::lang/{lang}/work/2009_astek.adoc[Missing 2009_astek !!!!]
 
-include::lang/{lang}/work/2009_atos.adoc[Missing 2009_atos !!!!]
+// include::lang/{lang}/work/2009_atos.adoc[Missing 2009_atos !!!!]
