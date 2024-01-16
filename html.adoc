@@ -13,8 +13,6 @@ include::conf/{lang}/attributes.adoc[Missing lang attributes !!!!]
 [small]#tristan.radisson@gmail.com# +
 [small]#+33 (0) 6 98 97 59 60#
 
-[big]#*{job_title}*#
-
 include::parts/objectives.adoc[Missing objectives !!!!]
 
 include::parts/work.adoc[Missing work !!!!]
