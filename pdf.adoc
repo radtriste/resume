@@ -23,6 +23,4 @@ include::parts/languages.adoc[Missing languages !!!!]
 
 include::parts/activities.adoc[Missing activities !!!!]
 
-include::parts/opensource.adoc[Missing Open Source projects !!!!]
-
 include::parts/links.adoc[Missing Links !!!!]
